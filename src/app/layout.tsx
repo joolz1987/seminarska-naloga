@@ -20,7 +20,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
-        <footer className="absolute inset-x-0 bottom-0 bg-black p-4">
+        <footer className="bg-black p-4">
           <Footer />
         </footer>
       </body>

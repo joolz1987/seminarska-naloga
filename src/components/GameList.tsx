@@ -3,6 +3,7 @@
 import games from "@/data/games";
 import { Game } from "@/types/game";
 import { useState } from "react";
+import Image from "next/image";
 
 const GameList = () => {
     const [cart, setCart] = useState<Game[]>([]);
@@ -14,13 +15,14 @@ const GameList = () => {
     return (
         <div>
         <h2>Available Games</h2>
-        <div> 
+        <div className="relative" style={{listStyleType: 'none', padding: 0}}> 
             {/* TODO: PORIHTAJ UI */}
             {games.map((game) => (
-            <div key={game.id} style={{ marginBottom: '10px' }} className="flex border-2 rounded-md p-6">
+            <div key={game.id} style={{ marginBottom: '10px' }} className=" border-2 rounded-md p-6">
+                <Image src={game.image} alt={game.title} width={100} height={200} style={{ borderRadius: '8px' }} />
                 <span>{game.title} - ${game.price.toFixed(2)}</span>
-                <button onClick={() => addToCart(game)} className="content-end ms-10">
-                    Add to Cart
+                <button onClick={() => addToCart(game)} className="absolute right-5 ms-10">
+                        Add to Cart
                 </button>
             </div>
             ))}
