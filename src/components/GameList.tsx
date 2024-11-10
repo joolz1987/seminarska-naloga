@@ -18,10 +18,10 @@ const GameList = () => {
         <div className="relative" style={{listStyleType: 'none', padding: 0}}> 
             {/* TODO: PORIHTAJ UI */}
             {games.map((game) => (
-            <div key={game.id} style={{ marginBottom: '10px' }} className=" border-2 rounded-md p-6">
-                <Image src={game.image} alt={game.title} width={100} height={200} style={{ borderRadius: '8px' }} />
-                <span>{game.title} - ${game.price.toFixed(2)}</span>
-                <button onClick={() => addToCart(game)} className="absolute right-5 ms-10">
+            <div key={game.id} style={{ marginBottom: '10px' }} className="flex border-2 shadow-lg shadow-blue-500 rounded-md p-6">
+                <Image src={game.image} alt={game.title} width={200} height={200} className="rounded-lg" />
+                <span className="mx-8">{game.title} - ${game.price.toFixed(2)} <br></br><br></br>{game.description} </span>
+                <button onClick={() => addToCart(game)} className="absolute bg-blue-500 right-5 ms-10 border-2 shadow-lg shadow-blue-500 rounded-md p-2 mb-20">
                         Add to Cart
                 </button>
             </div>
