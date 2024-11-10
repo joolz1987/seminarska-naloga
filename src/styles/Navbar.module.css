@@ -1,0 +1,72 @@
+/* components/Navbar.module.css */
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link styling */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #ddd;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburgerLine {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(248 250 252);
+    border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+        width: 200px;
+        flex-direction: column;
+        position: absolute;
+        top: 51px;
+        right: 0rem;
+        background-color: rgb(0, 0, 0);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
