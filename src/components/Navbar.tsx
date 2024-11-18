@@ -36,9 +36,6 @@ export default function Navbar() {
                     <li>
                         <Link href="/">Domov</Link>
                     </li>
-                    <li>
-                        <Link href="/games">Košarica</Link>
-                    </li>
                 </ul>
             </nav>
         </div>
