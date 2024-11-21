@@ -18,11 +18,13 @@ export default function RootLayout({
       <head >
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </head>
-      <body className="backgroundImage">
+      <body className="backgroundImage flex flex-col min-h-screen">
         <header className="bg-black p-4"> 
           <Navbar />
         </header>
+        <main className="flex-grow">
         {children}
+        </main>
         <footer className="bg-black p-4">
           <Footer />
         </footer>

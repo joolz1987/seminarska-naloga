@@ -11,7 +11,7 @@ const GameList = () => {
 
     const displayMessage = (text: string) => {
         setMessage(text);
-        setTimeout(() => setMessage(null), 3000); // Clear the message after 3 seconds
+        setTimeout(() => setMessage(null), 1500); // Clear the message after 3 seconds
       };
 
     const addToCart = (game: Game) => {
@@ -36,7 +36,7 @@ const GameList = () => {
     return (
         
         <div className="lg:flex">
-            <div className="relative lg:w-9/12 md:w-full sm:w-12" style={{listStyleType: 'none', padding: 0}}> 
+            <div className="relative lg:w-8/12 md:w-full sm:w-12" style={{listStyleType: 'none', padding: 0}}> 
                 {/* TODO: PORIHTAJ UI */}
                 {games.map((game) => (
                 <div key={game.id} style={{ marginBottom: '10px' }} className="flex border-2 shadow-lg shadow-blue-500 rounded-md p-6 ">
@@ -48,12 +48,12 @@ const GameList = () => {
                 </div>
                 ))}
             </div>
-            <div className="relative lg:w-3/12 md:w-full sm:w-12">
+            <div className="relative lg:w-4/12 md:w-full sm:w-12">
                 <h3 className="text-center">KOŠARICA</h3>
                 {cart.length > 0 ? (
                 <ul>
                     {cart.map((game) => (
-                        <div key={game.id} className="border-2 shadow-lg shadow-blue-500 rounded-md m-2 h-auto p-4 my-4 lg:w-80 md:w-12 sm:w-12" >
+                        <div key={game.id} className="border-2 shadow-lg shadow-blue-500 rounded-md m-2 h-auto p-4 my-4 lg:w-auto md:w-12 sm:w-12" >
                         {game.title} - ${game.price.toFixed(2)}
                         <button onClick={() => removeFromCart(game.id)} className="float-end bg-red-500 border-2 shadow-lg shadow-blue-500 rounded-md  px-2">X</button>
                         </div>
