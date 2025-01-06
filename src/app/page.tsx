@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <div>
-        <h1>Welcome home!</h1>
-        <p>
+    <div className="container mx-auto text-slate-50 p-3">
+      <div >
+        <h1 className="text-center">Welcome home!</h1>
+        <p className="py-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a sapien nunc. Aliquam sit amet est nec mauris lacinia lacinia. Morbi semper, orci ac mattis commodo, felis ipsum ullamcorper dolor, vitae venenatis nisi diam at mauris. Nunc fringilla nisl tellus, blandit tincidunt lectus suscipit eu. Morbi finibus tortor sit amet tellus rutrum, vitae commodo orci eleifend. Cras risus turpis, vestibulum id est vel, auctor aliquet quam. Aliquam posuere orci eros. Donec eros sapien, condimentum ut gravida sed, dapibus id lorem. In semper tincidunt velit, eu congue felis fringilla in. Donec eget libero eu magna venenatis mattis convallis ac tellus. Fusce eget libero nec velit aliquet rhoncus. Morbi sagittis tristique purus. Morbi suscipit ipsum felis, eu commodo purus finibus eu. Ut aliquet aliquam elit, et finibus nulla convallis id. Morbi laoreet turpis purus, id dictum nulla blandit eget.
 
 Aenean rhoncus pretium odio eu fringilla. Integer pretium hendrerit lorem, vel interdum tellus pulvinar nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique mattis augue, vel lacinia ipsum semper id. Mauris auctor tortor vitae mattis aliquet. Sed imperdiet diam urna, ut blandit nulla maximus eget. In vitae eleifend quam, ac convallis tellus. Donec auctor posuere dui, eget pellentesque dui viverra in. Ut sed diam vel nibh tincidunt tempus. Nullam elementum a tellus eget vehicula.
